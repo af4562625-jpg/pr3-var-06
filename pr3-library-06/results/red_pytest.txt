@@ -1,0 +1,66 @@
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF          [100%]
+=========================== short test summary info ============================
+FAILED tests/test_atdd.py::test_ac01_add_and_find - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_atdd.py::test_ac02_borrow_and_return - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_atdd.py::test_ac03_duplicate_preserves_original - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_atdd.py::test_ac04_second_borrow_preserves_first_reader - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_atdd.py::test_ac05_unknown_book_does_not_change_catalog - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_sdd.py::test_specification[S01] - NotImplementedError: Этап RED: list_books не реализован
+FAILED tests/test_sdd.py::test_specification[S02] - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_sdd.py::test_specification[S03] - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_sdd.py::test_specification[S04] - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_sdd.py::test_specification[S05] - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_sdd.py::test_specification[S06] - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_sdd.py::test_specification[S07] - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_sdd.py::test_specification[S08] - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_sdd.py::test_specification[S09] - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_sdd.py::test_specification[S10] - NotImplementedError: Этап RED: borrow_book не реализован
+FAILED tests/test_tdd.py::test_empty_catalog - NotImplementedError: Этап RED: list_books не реализован
+FAILED tests/test_tdd.py::test_add_book - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_strip_fields - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_duplicate_does_not_change_catalog - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_invalid_isbn[None] - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_invalid_isbn[] - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_invalid_isbn[ ] - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_invalid_isbn[123] - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_invalid_isbn[True] - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_invalid_title[None] - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_invalid_title[] - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_invalid_title[   ] - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_invalid_title[42] - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_invalid_author[None] - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_invalid_author[] - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_invalid_author[   ] - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_invalid_author[42] - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_book_immutable - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_list_sorted_by_isbn - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_find_by_isbn - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_find_by_title_case_insensitive - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_find_missing_returns_none - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_search_multiple_title_matches - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_search_exact_isbn - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_invalid_search_query[None] - NotImplementedError: Этап RED: find_book не реализован
+FAILED tests/test_tdd.py::test_invalid_search_query[] - NotImplementedError: Этап RED: find_book не реализован
+FAILED tests/test_tdd.py::test_invalid_search_query[ ] - NotImplementedError: Этап RED: find_book не реализован
+FAILED tests/test_tdd.py::test_invalid_search_query[5] - NotImplementedError: Этап RED: find_book не реализован
+FAILED tests/test_tdd.py::test_borrow_success - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_borrow_twice_preserves_first_reader - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_borrow_unknown_book - NotImplementedError: Этап RED: borrow_book не реализован
+FAILED tests/test_tdd.py::test_invalid_reader_does_not_borrow[None] - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_invalid_reader_does_not_borrow[] - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_invalid_reader_does_not_borrow[ ] - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_invalid_reader_does_not_borrow[15] - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_return_success - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_return_not_borrowed_preserves_catalog - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_return_unknown_book - NotImplementedError: Этап RED: return_book не реализован
+FAILED tests/test_tdd.py::test_borrow_again_after_return - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_find_follows_new_status - NotImplementedError: Этап RED: add_book не реализован
+FAILED tests/test_tdd.py::test_invalid_borrow_isbn[None] - NotImplementedError: Этап RED: borrow_book не реализован
+FAILED tests/test_tdd.py::test_invalid_borrow_isbn[] - NotImplementedError: Этап RED: borrow_book не реализован
+FAILED tests/test_tdd.py::test_invalid_borrow_isbn[ ] - NotImplementedError: Этап RED: borrow_book не реализован
+FAILED tests/test_tdd.py::test_invalid_borrow_isbn[15] - NotImplementedError: Этап RED: borrow_book не реализован
+FAILED tests/test_tdd.py::test_invalid_return_isbn[None] - NotImplementedError: Этап RED: return_book не реализован
+FAILED tests/test_tdd.py::test_invalid_return_isbn[] - NotImplementedError: Этап RED: return_book не реализован
+FAILED tests/test_tdd.py::test_invalid_return_isbn[ ] - NotImplementedError: Этап RED: return_book не реализован
+FAILED tests/test_tdd.py::test_invalid_return_isbn[15] - NotImplementedError: Этап RED: return_book не реализован
+63 failed in 0.12s
