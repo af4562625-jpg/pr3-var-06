@@ -1,0 +1,26 @@
+name: Проверка практической работы №3
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Установка зависимостей
+        run: python -m pip install -r requirements.txt
+      - name: TDD + ATDD + SDD
+        run: python -m pytest -q tests
+      - name: BDD
+        run: python -m behave --no-capture
+      - name: Покрытие основной программы
+        run: |
+          coverage run --branch --source=library_manager -m pytest -q tests
+          coverage report -m
+      - name: Демонстрация
+        run: python app.py --demo
