@@ -1,0 +1,29 @@
+COMMAND: C:\Users\Anonchik\AppData\Local\Programs\Python\Python311\python.exe -m bandit -f txt C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\python\baseline\library_manager.py
+EXIT: 0
+[main]	INFO	profile include tests: None
+[main]	INFO	profile exclude tests: None
+[main]	INFO	cli include tests: None
+[main]	INFO	cli exclude tests: None
+[main]	INFO	running on Python 3.11.9
+Run started:2026-11-23 19:14:38.444298+00:00
+
+Test results:
+	No issues identified.
+
+Code scanned:
+	Total lines of code: 57
+	Total lines skipped (#nosec): 0
+	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 0
+		Medium: 0
+		High: 0
+	Total issues (by confidence):
+		Undefined: 0
+		Low: 0
+		Medium: 0
+		High: 0
+Files skipped (0):

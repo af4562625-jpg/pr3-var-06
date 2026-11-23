@@ -1,0 +1,12 @@
+jstat -gc 46992 500 4
+exit 1
+sun.jvmstat.monitor.MonitorException: Could not attach to 46992
+	at jdk.internal.jvmstat/sun.jvmstat.perfdata.monitor.protocol.local.PerfDataBuffer.<init>(Unknown Source)
+	at jdk.internal.jvmstat/sun.jvmstat.perfdata.monitor.protocol.local.LocalMonitoredVm.<init>(Unknown Source)
+	at jdk.internal.jvmstat/sun.jvmstat.perfdata.monitor.protocol.local.MonitoredHostProvider.getMonitoredVm(Unknown Source)
+	at jdk.jcmd/sun.tools.jstat.Jstat.logSamples(Unknown Source)
+	at jdk.jcmd/sun.tools.jstat.Jstat.main(Unknown Source)
+Caused by: java.lang.IllegalArgumentException: Could not open PerfMemory, error 5
+	at java.base/jdk.internal.perf.Perf.attach0(Native Method)
+	at java.base/jdk.internal.perf.Perf.attach(Unknown Source)
+	... 5 more

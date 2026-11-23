@@ -1,0 +1,9 @@
+COMMAND: C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\deps\jdk4py\java-runtime\bin\java.exe -XX:StartFlightRecording=filename=C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\results\java_baseline.jfr,settings=profile -Xlog:gc:file=C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\results\java_baseline_gc.log -cp C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\java\baseline\classes Probe
+EXIT: 0
+[0.277s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0.277s][info][jfr,startup] 
+[0.277s][info][jfr,startup] Use jcmd 18624 JFR.dump name=1 to copy recording data to file.
+case 2: actual=1,00 expected=1,00 PASS
+case 3: actual=32,00 expected=32,00 PASS
+case 4: actual=0,00 expected=0,00 PASS
+checksum=1.9999998996801923E17

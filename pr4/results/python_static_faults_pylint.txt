@@ -1,0 +1,18 @@
+COMMAND: C:\Users\Anonchik\AppData\Local\Programs\Python\Python311\python.exe -m pylint --output-format=text C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\python\static_faults\library_manager.py
+EXIT: 28
+************* Module library_manager
+pr4\python\static_faults\library_manager.py:7:0: C0115: Missing class docstring (missing-class-docstring)
+pr4\python\static_faults\library_manager.py:15:15: W0123: Use of eval (eval-used)
+pr4\python\static_faults\library_manager.py:21:15: W0718: Catching too general exception Exception (broad-exception-caught)
+pr4\python\static_faults\library_manager.py:17:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+pr4\python\static_faults\library_manager.py:24:4: C0116: Missing function or method docstring (missing-function-docstring)
+pr4\python\static_faults\library_manager.py:25:8: C0103: Variable name "BadName" doesn't conform to snake_case naming style (invalid-name)
+pr4\python\static_faults\library_manager.py:25:8: W0612: Unused variable 'BadName' (unused-variable)
+pr4\python\static_faults\library_manager.py:51:4: C0116: Missing function or method docstring (missing-function-docstring)
+pr4\python\static_faults\library_manager.py:54:4: C0116: Missing function or method docstring (missing-function-docstring)
+pr4\python\static_faults\library_manager.py:63:4: C0116: Missing function or method docstring (missing-function-docstring)
+pr4\python\static_faults\library_manager.py:2:0: W0611: Unused import os (unused-import)
+
+------------------------------------------------------------------
+Your code has been rated at 8.00/10 (previous run: 9.06/10, -1.06)
+

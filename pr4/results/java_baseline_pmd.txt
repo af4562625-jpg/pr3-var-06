@@ -1,0 +1,8 @@
+COMMAND: C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\deps\jdk4py\java-runtime\bin\java.exe -cp C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\toolsbin\pmd-bin-6.55.0\lib\* net.sourceforge.pmd.PMD -d C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\java\baseline\Converter.java -R category/java/bestpractices.xml,category/java/errorprone.xml -f text -no-cache
+EXIT: 4
+����. 23, 2026 10:14:42 PM net.sourceforge.pmd.PMD runPmd
+WARNING: Some deprecated options were used on the command-line, including -no-cache
+����. 23, 2026 10:14:42 PM net.sourceforge.pmd.PMD runPmd
+WARNING: Consider replacing it with --no-cache
+C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\java\baseline\Converter.java:17:	SystemPrintln:	System.out.println is used
+C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\java\baseline\Converter.java:20:	SystemPrintln:	System.out.println is used

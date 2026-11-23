@@ -1,0 +1,23 @@
+COMMAND: C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\deps\jdk4py\java-runtime\bin\java.exe -jar C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\toolsbin\checkstyle.jar -c /google_checks.xml C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\java\baseline\Converter.java
+EXIT: 0
+Начинаем проверку...
+[WARN] C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\java\baseline\Converter.java:3:1: 'CLASS_DEF' должен быть отделён от предыдущей строки. [EmptyLineSeparator]
+[WARN] C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\java\baseline\Converter.java:5:5: 'method def modifier' имеет неправильный уровень отступа 4, ожидаемый уровень 2. [Indentation]
+[WARN] C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\java\baseline\Converter.java:6:9: 'switch' имеет неправильный уровень отступа 8, ожидаемый уровень 4. [Indentation]
+[WARN] C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\java\baseline\Converter.java:7:13: 'case' дочерний элемент имеет неправильный уровень отступа 12, ожидаемый уровень 6. [Indentation]
+[WARN] C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\java\baseline\Converter.java:8:13: 'case' дочерний элемент имеет неправильный уровень отступа 12, ожидаемый уровень 6. [Indentation]
+[WARN] C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\java\baseline\Converter.java:9:13: 'case' дочерний элемент имеет неправильный уровень отступа 12, ожидаемый уровень 6. [Indentation]
+[WARN] C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\java\baseline\Converter.java:10:13: 'case' дочерний элемент имеет неправильный уровень отступа 12, ожидаемый уровень 6. [Indentation]
+[WARN] C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\java\baseline\Converter.java:11:13: 'case' дочерний элемент имеет неправильный уровень отступа 12, ожидаемый уровень 6. [Indentation]
+[WARN] C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\java\baseline\Converter.java:12:9: 'switch rcurly' имеет неправильный уровень отступа 8, ожидаемый уровень 4. [Indentation]
+[WARN] C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\java\baseline\Converter.java:13:5: 'method def rcurly' имеет неправильный уровень отступа 4, ожидаемый уровень 2. [Indentation]
+[WARN] C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\java\baseline\Converter.java:15:5: 'method def modifier' имеет неправильный уровень отступа 4, ожидаемый уровень 2. [Indentation]
+[WARN] C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\java\baseline\Converter.java:15:5: 'METHOD_DEF' должен быть отделён от предыдущей строки. [EmptyLineSeparator]
+[WARN] C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\java\baseline\Converter.java:16:9: 'try' имеет неправильный уровень отступа 8, ожидаемый уровень 4. [Indentation]
+[WARN] C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\java\baseline\Converter.java:17:13: 'try' дочерний элемент имеет неправильный уровень отступа 12, ожидаемый уровень 6. [Indentation]
+[WARN] C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\java\baseline\Converter.java:18:13: 'try' дочерний элемент имеет неправильный уровень отступа 12, ожидаемый уровень 6. [Indentation]
+[WARN] C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\java\baseline\Converter.java:19:13: 'try' дочерний элемент имеет неправильный уровень отступа 12, ожидаемый уровень 6. [Indentation]
+[WARN] C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\java\baseline\Converter.java:20:13: 'try' дочерний элемент имеет неправильный уровень отступа 12, ожидаемый уровень 6. [Indentation]
+[WARN] C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\java\baseline\Converter.java:21:9: 'try rcurly' имеет неправильный уровень отступа 8, ожидаемый уровень 4. [Indentation]
+[WARN] C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\java\baseline\Converter.java:22:5: 'method def rcurly' имеет неправильный уровень отступа 4, ожидаемый уровень 2. [Indentation]
+Проверка завершена.

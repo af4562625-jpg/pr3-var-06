@@ -1,0 +1,8 @@
+RuntimeMonitor (JMX) exit=0
+case 2: actual=10,00 expected=1,00 FAIL
+case 3: actual=0,00 expected=32,00 FAIL
+case 4: actual=Infinity expected=0,00 FAIL
+checksum=1.9999998996801923E17
+Thread CPU ns: 31250000
+Heap before bytes: 4194304
+Heap after bytes: 4194304

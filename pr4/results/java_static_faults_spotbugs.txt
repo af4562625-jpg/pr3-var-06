@@ -1,0 +1,2 @@
+SpotBugs 4.9.3, JRE 17; exit: 0
+H I Dm: Found reliance on default encoding in Converter.main(String[]): new java.util.Scanner(InputStream)  At Converter.java:[line 18]

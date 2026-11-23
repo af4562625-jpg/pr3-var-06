@@ -1,0 +1,70 @@
+COMMAND: C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\deps\bin\ruff.exe check --select E,F,N,S,B C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\python\static_faults\library_manager.py
+EXIT: 1
+F401 [*] `os` imported but unused
+ --> pr4\python\static_faults\library_manager.py:2:8
+  |
+1 | """Финальная версия: библиотека с проверяемой бизнес-логикой."""
+2 | import os
+  |        ^^
+3 | from dataclasses import replace
+4 | from models import Book
+  |
+help: Remove unused import: `os`
+  |
+1 | """Финальная версия: библиотека с проверяемой бизнес-логикой."""
+  - import os
+2 | from dataclasses import replace
+  |
+
+S307 Use of possibly insecure function; consider using `ast.literal_eval`
+  --> pr4\python\static_faults\library_manager.py:15:16
+   |
+13 |         if not isinstance(value, str) or not value.strip():
+14 |             raise ValueError(f"{field} должен быть непустой строкой")
+15 |         return eval(value.strip())
+   |                ^^^^^^^^^^^^^^^^^^^
+16 |
+17 |     def _require_book(self, isbn: str) -> Book:
+   |
+
+S110 `try`-`except`-`pass` detected, consider logging the exception
+  --> pr4\python\static_faults\library_manager.py:21:9
+   |
+19 |           try:
+20 |               return self._books[key]
+21 | /         except Exception:
+22 | |             pass
+   | |________________^
+23 |
+24 |       def add_book(self, isbn: str, title: str, author: str) -> Book:
+   |
+
+N806 Variable `BadName` in function should be lowercase
+  --> pr4\python\static_faults\library_manager.py:25:9
+   |
+24 |     def add_book(self, isbn: str, title: str, author: str) -> Book:
+25 |         BadName = 123
+   |         ^^^^^^^
+26 |         key = self._required_string(isbn, "ISBN")
+27 |         title = self._required_string(title, "Название")
+   |
+
+F841 Local variable `BadName` is assigned to but never used
+  --> pr4\python\static_faults\library_manager.py:25:9
+   |
+24 |     def add_book(self, isbn: str, title: str, author: str) -> Book:
+25 |         BadName = 123
+   |         ^^^^^^^
+26 |         key = self._required_string(isbn, "ISBN")
+27 |         title = self._required_string(title, "Название")
+   |
+help: Remove assignment to unused variable `BadName`
+   |
+24 |     def add_book(self, isbn: str, title: str, author: str) -> Book:
+   -         BadName = 123
+25 |         key = self._required_string(isbn, "ISBN")
+   |
+note: This is an unsafe fix and may change runtime behavior
+
+Found 5 errors.
+[*] 1 fixable with `--fix` (1 unsafe fix available with `--fix --unsafe-fixes`).

@@ -1,0 +1,23 @@
+COMMAND: C:\Users\Anonchik\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\python\dynamic_check.py C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\python\dynamic_faults
+EXIT: 0
+tracemalloc current/peak bytes: 487044 487294
+         28503 function calls in 0.013 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.003    0.003    0.013    0.013 C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\python\dynamic_check.py:6(workload)
+     2000    0.004    0.000    0.010    0.000 C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\python\dynamic_faults\library_manager.py:23(add_book)
+     6100    0.004    0.000    0.005    0.000 C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\python\dynamic_faults\library_manager.py:10(_required_string)
+     2000    0.001    0.000    0.001    0.000 <string>:2(__init__)
+    12200    0.001    0.000    0.001    0.000 {method 'strip' of 'str' objects}
+     6100    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+      100    0.000    0.000    0.000    0.000 C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\python\dynamic_faults\library_manager.py:41(search_books)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\Anonchik\Documents\Codex\2026-11-23\new-chat-2\pr4\python\dynamic_faults\library_manager.py:7(__init__)
+
+
+
+DOUBLE_LOAN: FAIL (accepted)
+RETURN: FAIL
+PARTIAL_SEARCH: FAIL
