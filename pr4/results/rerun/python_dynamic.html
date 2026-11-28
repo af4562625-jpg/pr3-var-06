@@ -1,0 +1,66 @@
+<!doctype html><meta charset="utf-8"><style>body{margin:32px;font:18px Arial;color:#17212b;background:#fff}
+    h1{font-size:28px}h2{font-size:22px}h3{font-size:19px}
+    pre{font:15px/1.35 Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;
+    background:#f4f6f8;padding:14px;border:1px solid #cbd2d9}a{color:#0757a6}
+    table{border-collapse:collapse}td,th{border:1px solid #cbd2d9;padding:8px 16px}
+    section{margin:24px 0 36px}.note{color:#505c68}</style><h1>python_dynamic</h1><p class="note">Captured run: 2026-11-28T08:31:05.618829+00:00 · Python 3.13.2 · exact logs and raw profiles below.</p><h3>Python baseline — cProfile + tracemalloc</h3><pre>SOURCE: python/baseline/library_manager.py
+WORKLOAD: 2000 books; 100 title searches
+tracemalloc current bytes: 466548
+tracemalloc peak bytes: 499431
+Retained books: 2000
+tracemalloc top 3 allocation lines:
+  library_manager.py:29: 210936 bytes; 2000 blocks
+  dynamic_check.py:27: 187780 bytes; 4000 blocks
+  library_manager.py:30: 51904 bytes; 1 blocks
+cProfile (top 8 by cumulative time):
+         432993 function calls in 0.812 seconds
+
+   Ordered by: cumulative time
+   List reduced from 14 to 8 due to restriction &lt;8&gt;
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.014    0.014    0.812    0.812 dynamic_check.py:24(workload)
+      100    0.004    0.000    0.753    0.008 library_manager.py:41(search_books)
+     4090    0.281    0.000    0.632    0.000 library_manager.py:47(&lt;genexpr&gt;)
+   200100    0.351    0.000    0.351    0.000 {method &#x27;casefold&#x27; of &#x27;str&#x27; objects}
+      100    0.056    0.001    0.116    0.001 library_manager.py:49(list_books)
+   200100    0.048    0.000    0.048    0.000 library_manager.py:50(&lt;genexpr&gt;)
+     2000    0.008    0.000    0.046    0.000 library_manager.py:23(add_book)
+     6100    0.019    0.000    0.034    0.000 library_manager.py:10(_required_string)
+
+
+
+DOUBLE_LOAN: PASS
+RETURN: PASS
+PARTIAL_SEARCH: PASS
+BEHAVIOR: 3/3 passed; expected failures=0</pre><h3>Python dynamic_faults — cProfile + tracemalloc</h3><pre>SOURCE: python/dynamic_faults/library_manager.py
+WORKLOAD: 2000 books; 100 title searches
+tracemalloc current bytes: 461060
+tracemalloc peak bytes: 494023
+Retained books: 2000
+tracemalloc top 3 allocation lines:
+  library_manager.py:29: 210936 bytes; 2000 blocks
+  dynamic_check.py:27: 187780 bytes; 4000 blocks
+  library_manager.py:30: 51904 bytes; 1 blocks
+cProfile (top 8 by cumulative time):
+         429103 function calls in 0.794 seconds
+
+   Ordered by: cumulative time
+   List reduced from 14 to 8 due to restriction &lt;8&gt;
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.014    0.014    0.794    0.794 dynamic_check.py:24(workload)
+      100    0.002    0.000    0.735    0.007 library_manager.py:41(search_books)
+      200    0.269    0.001    0.617    0.003 library_manager.py:47(&lt;genexpr&gt;)
+   200100    0.348    0.000    0.348    0.000 {method &#x27;casefold&#x27; of &#x27;str&#x27; objects}
+      100    0.057    0.001    0.115    0.001 library_manager.py:49(list_books)
+   200100    0.047    0.000    0.047    0.000 library_manager.py:50(&lt;genexpr&gt;)
+     2000    0.008    0.000    0.046    0.000 library_manager.py:23(add_book)
+     6100    0.019    0.000    0.034    0.000 library_manager.py:10(_required_string)
+
+
+
+DOUBLE_LOAN: FAIL
+RETURN: FAIL
+PARTIAL_SEARCH: FAIL
+BEHAVIOR: 0/3 passed; expected failures=3</pre>

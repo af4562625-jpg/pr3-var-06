@@ -1,0 +1,20 @@
+COMMAND: C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\.tools\venv\Scripts\python.exe -m pip freeze
+EXIT: 0
+
+astroid==4.3.4
+bandit==1.9.4
+colorama==0.4.6
+dill==0.4.1
+isort==6.0.1
+markdown-it-py==4.3.0
+mccabe==0.7.0
+mdurl==0.1.2
+mypy_extensions==1.2.0
+platformdirs==4.14.9
+Pygments==2.21.0
+pylint==4.1.4
+PyYAML==6.0.4
+rich==15.0.0
+ruff==0.17.6
+stevedore==5.10.0
+tomlkit==0.15.3

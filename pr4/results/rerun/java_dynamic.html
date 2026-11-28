@@ -1,0 +1,72 @@
+<!doctype html><meta charset="utf-8"><style>body{margin:32px;font:18px Arial;color:#17212b;background:#fff}
+    h1{font-size:28px}h2{font-size:22px}h3{font-size:19px}
+    pre{font:15px/1.35 Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;
+    background:#f4f6f8;padding:14px;border:1px solid #cbd2d9}a{color:#0757a6}
+    table{border-collapse:collapse}td,th{border:1px solid #cbd2d9;padding:8px 16px}
+    section{margin:24px 0 36px}.note{color:#505c68}</style><h1>java_dynamic</h1><p class="note">Captured run: 2026-11-28T08:31:05.618829+00:00 · Python 3.13.2 · exact logs and raw profiles below.</p><h3>Java baseline — JMX + JFR</h3><pre>JFR state: RUNNING
+case 2: input=1000.00 actual=1.00 expected=1.00 PASS
+case 3: input=0.00 actual=32.00 expected=32.00 PASS
+case 4: input=32.00 actual=0.00 expected=0.00 PASS
+JMX MemoryMXBean heap before bytes: 17941296
+JMX MemoryMXBean heap after bytes: 20038448
+JMX ThreadMXBean CPU supported: true
+JMX ThreadMXBean current thread CPU ns: 125000000
+Wall time ns: 153960500
+checksum=1.9999998996801923E17
+JFR file: java_baseline.jfr
+BEHAVIOR: 3/3 passed; expected failures=0
+
+JFR summary (selected rows):
+Version: 2.1
+ Chunks: 1
+ Duration: 0 s
+ Event Type                              Count  Size (bytes) 
+ jdk.ThreadAllocationStatistics             38           322
+ jdk.ExecutionSample                         2            18
+ pr4.Workload                                1            24
+ jdk.GCHeapSummary                           0             0
+ jdk.GarbageCollection                       0             0
+
+pr4.Workload {
+  startTime = 11:31:47.088 (2026-11-28)
+  duration = 53,7 ms
+  iterations = 20000000
+  checksum = 1.9999998996801923E17
+  eventThread = &quot;main&quot; (javaThreadId = 3)
+  stackTrace = [
+    RuntimeMonitor.main(String[]) line: 50
+  ]
+}</pre><h3>Java dynamic_faults — JMX + JFR</h3><pre>JFR state: RUNNING
+case 2: input=1000.00 actual=10.00 expected=1.00 FAIL
+case 3: input=0.00 actual=0.00 expected=32.00 FAIL
+case 4: input=32.00 actual=Infinity expected=0.00 FAIL
+JMX MemoryMXBean heap before bytes: 15844144
+JMX MemoryMXBean heap after bytes: 20038448
+JMX ThreadMXBean CPU supported: true
+JMX ThreadMXBean current thread CPU ns: 156250000
+Wall time ns: 158499100
+checksum=1.9999998996801923E17
+JFR file: java_dynamic_faults.jfr
+BEHAVIOR: 0/3 passed; expected failures=3
+
+JFR summary (selected rows):
+Version: 2.1
+ Chunks: 1
+ Duration: 0 s
+ Event Type                              Count  Size (bytes) 
+ jdk.ThreadAllocationStatistics             40           338
+ jdk.ExecutionSample                         6            54
+ pr4.Workload                                1            24
+ jdk.GCHeapSummary                           0             0
+ jdk.GarbageCollection                       0             0
+
+pr4.Workload {
+  startTime = 11:31:49.043 (2026-11-28)
+  duration = 54,9 ms
+  iterations = 20000000
+  checksum = 1.9999998996801923E17
+  eventThread = &quot;main&quot; (javaThreadId = 3)
+  stackTrace = [
+    RuntimeMonitor.main(String[]) line: 50
+  ]
+}</pre>

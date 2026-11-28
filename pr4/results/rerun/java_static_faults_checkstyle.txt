@@ -1,0 +1,31 @@
+COMMAND: C:\Users\afrol\.jdks\openjdk-24.0.2+12-54\bin\java.exe -Dfile.encoding=UTF-8 -jar C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\.tools\checkstyle-10.21.4-all.jar -c /google_checks.xml java/static_faults/Converter.java
+EXIT: 0
+
+Начинаем проверку...
+[WARN] C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\java\static_faults\Converter.java:2:1: Неправильный лексикографический порядок импорта 'java.util.List'. Должен стоять перед 'java.util.Scanner'. [CustomImportOrder]
+[WARN] C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\java\static_faults\Converter.java:4:1: 'CLASS_DEF' должен быть отделён от предыдущей строки. [EmptyLineSeparator]
+[WARN] C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\java\static_faults\Converter.java:6:5: 'method def modifier' имеет неправильный уровень отступа 4, ожидаемый уровень 2. [Indentation]
+[WARN] C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\java\static_faults\Converter.java:7:9: 'switch' имеет неправильный уровень отступа 8, ожидаемый уровень 4. [Indentation]
+[WARN] C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\java\static_faults\Converter.java:8:13: 'case' дочерний элемент имеет неправильный уровень отступа 12, ожидаемый уровень 6. [Indentation]
+[WARN] C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\java\static_faults\Converter.java:9:13: 'case' дочерний элемент имеет неправильный уровень отступа 12, ожидаемый уровень 6. [Indentation]
+[WARN] C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\java\static_faults\Converter.java:10:13: 'case' дочерний элемент имеет неправильный уровень отступа 12, ожидаемый уровень 6. [Indentation]
+[WARN] C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\java\static_faults\Converter.java:11:13: 'case' дочерний элемент имеет неправильный уровень отступа 12, ожидаемый уровень 6. [Indentation]
+[WARN] C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\java\static_faults\Converter.java:12:13: 'case' дочерний элемент имеет неправильный уровень отступа 12, ожидаемый уровень 6. [Indentation]
+[WARN] C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\java\static_faults\Converter.java:13:9: 'switch rcurly' имеет неправильный уровень отступа 8, ожидаемый уровень 4. [Indentation]
+[WARN] C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\java\static_faults\Converter.java:14:5: 'method def rcurly' имеет неправильный уровень отступа 4, ожидаемый уровень 2. [Indentation]
+[WARN] C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\java\static_faults\Converter.java:16:5: 'method def modifier' имеет неправильный уровень отступа 4, ожидаемый уровень 2. [Indentation]
+[WARN] C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\java\static_faults\Converter.java:16:5: 'METHOD_DEF' должен быть отделён от предыдущей строки. [EmptyLineSeparator]
+[WARN] C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\java\static_faults\Converter.java:18:9: 'try' имеет неправильный уровень отступа 8, ожидаемый уровень 4. [Indentation]
+[WARN] C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\java\static_faults\Converter.java:19:13: 'try' дочерний элемент имеет неправильный уровень отступа 12, ожидаемый уровень 6. [Indentation]
+[WARN] C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\java\static_faults\Converter.java:20:13: 'try' дочерний элемент имеет неправильный уровень отступа 12, ожидаемый уровень 6. [Indentation]
+[WARN] C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\java\static_faults\Converter.java:20:17: Аббревиатура в имени 'BAD_NAME' должна содержать не более '1' последовательных заглавных букв. [AbbreviationAsWordInName]
+[WARN] C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\java\static_faults\Converter.java:20:17: Local variable name 'BAD_NAME' must match pattern '^[a-z]([a-z0-9][a-zA-Z0-9]*)?$'. [LocalVariableName]
+[WARN] C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\java\static_faults\Converter.java:21:13: 'try' дочерний элемент имеет неправильный уровень отступа 12, ожидаемый уровень 6. [Indentation]
+[WARN] C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\java\static_faults\Converter.java:22:13: 'try' дочерний элемент имеет неправильный уровень отступа 12, ожидаемый уровень 6. [Indentation]
+[WARN] C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\java\static_faults\Converter.java:23:13: 'try' имеет неправильный уровень отступа 12, ожидаемый уровень 6. [Indentation]
+[WARN] C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\java\static_faults\Converter.java:23:17: После символа '{' (17) нужен перевод строки. [LeftCurlyEol]
+[WARN] C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\java\static_faults\Converter.java:23:65: Пустой блок catch. [EmptyCatchBlock]
+[WARN] C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\java\static_faults\Converter.java:24:13: 'try' дочерний элемент имеет неправильный уровень отступа 12, ожидаемый уровень 6. [Indentation]
+[WARN] C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\java\static_faults\Converter.java:25:9: 'try rcurly' имеет неправильный уровень отступа 8, ожидаемый уровень 4. [Indentation]
+[WARN] C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\java\static_faults\Converter.java:26:5: 'method def rcurly' имеет неправильный уровень отступа 4, ожидаемый уровень 2. [Indentation]
+Проверка завершена.

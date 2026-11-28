@@ -1,0 +1,4 @@
+COMMAND: C:\Users\afrol\.jdks\openjdk-24.0.2+12-54\bin\javac.exe -version
+EXIT: 0
+
+javac 24.0.2

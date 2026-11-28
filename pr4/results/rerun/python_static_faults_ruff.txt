@@ -1,0 +1,10 @@
+COMMAND: C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\.tools\venv\Scripts\python.exe -m ruff check --isolated --select E,F,N,S,B --output-format concise python/static_faults/library_manager.py
+EXIT: 1
+
+python\static_faults\library_manager.py:2:8: F401 [*] `os` imported but unused
+python\static_faults\library_manager.py:15:16: S307 Use of possibly insecure function; consider using `ast.literal_eval`
+python\static_faults\library_manager.py:21:9: S110 `try`-`except`-`pass` detected, consider logging the exception
+python\static_faults\library_manager.py:25:9: N806 Variable `BadName` in function should be lowercase
+python\static_faults\library_manager.py:25:9: F841 Local variable `BadName` is assigned to but never used
+Found 5 errors.
+[*] 1 fixable with `--fix` (1 unsafe fix available with `--fix --unsafe-fixes`).

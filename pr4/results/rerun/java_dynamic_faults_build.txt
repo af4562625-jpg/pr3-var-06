@@ -1,0 +1,3 @@
+COMMAND: C:\Users\afrol\.jdks\openjdk-24.0.2+12-54\bin\javac.exe --release 17 -encoding UTF-8 -d C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\build\dynamic_faults java/dynamic_faults/Converter.java java/Probe.java java/RuntimeMonitor.java java/MonitorProbe.java
+EXIT: 0
+

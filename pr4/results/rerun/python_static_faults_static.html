@@ -1,0 +1,24 @@
+<!doctype html><meta charset="utf-8"><style>body{margin:32px;font:18px Arial;color:#17212b;background:#fff}
+    h1{font-size:28px}h2{font-size:22px}h3{font-size:19px}
+    pre{font:15px/1.35 Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;
+    background:#f4f6f8;padding:14px;border:1px solid #cbd2d9}a{color:#0757a6}
+    table{border-collapse:collapse}td,th{border:1px solid #cbd2d9;padding:8px 16px}
+    section{margin:24px 0 36px}.note{color:#505c68}</style><h1>python_static_faults_static</h1><p class="note">Captured run: 2026-11-28T08:31:05.618829+00:00 · Python 3.13.2 · exact logs and raw profiles below.</p><h3>pylint — messages: 11; exit: 28</h3><pre>************* Module library_manager
+python\static_faults\library_manager.py:7:0: C0115: Missing class docstring (missing-class-docstring)
+python\static_faults\library_manager.py:15:15: W0123: Use of eval (eval-used)
+python\static_faults\library_manager.py:21:15: W0718: Catching too general exception Exception (broad-exception-caught)
+python\static_faults\library_manager.py:17:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+python\static_faults\library_manager.py:24:4: C0116: Missing function or method docstring (missing-function-docstring)
+python\static_faults\library_manager.py:25:8: C0103: Variable name &quot;BadName&quot; doesn&#x27;t conform to snake_case naming style (invalid-name)
+
+[Excerpt: 6 of 11 diagnostics; full output in python_static_faults_pylint.txt]</pre><h3>ruff — messages: 5; exit: 1</h3><pre>python\static_faults\library_manager.py:2:8: F401 [*] `os` imported but unused
+python\static_faults\library_manager.py:15:16: S307 Use of possibly insecure function; consider using `ast.literal_eval`
+python\static_faults\library_manager.py:21:9: S110 `try`-`except`-`pass` detected, consider logging the exception
+python\static_faults\library_manager.py:25:9: N806 Variable `BadName` in function should be lowercase
+python\static_faults\library_manager.py:25:9: F841 Local variable `BadName` is assigned to but never used
+Found 5 errors.
+[*] 1 fixable with `--fix` (1 unsafe fix available with `--fix --unsafe-fixes`).</pre><h3>bandit — messages: 2; exit: 1</h3><pre>.\python/static_faults/library_manager.py:15: B307 blacklist [MEDIUM]
+Use of possibly insecure function - consider using safer ast.literal_eval.
+
+.\python/static_faults/library_manager.py:21: B110 try_except_pass [LOW]
+Try, Except, Pass detected.</pre>

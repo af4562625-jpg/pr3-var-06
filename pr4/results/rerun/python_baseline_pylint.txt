@@ -1,0 +1,9 @@
+COMMAND: C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\.tools\venv\Scripts\python.exe -m pylint --output-format=text --score=n --reports=n --persistent=n python/baseline/library_manager.py
+EXIT: 16
+
+************* Module library_manager
+python\baseline\library_manager.py:6:0: C0115: Missing class docstring (missing-class-docstring)
+python\baseline\library_manager.py:23:4: C0116: Missing function or method docstring (missing-function-docstring)
+python\baseline\library_manager.py:49:4: C0116: Missing function or method docstring (missing-function-docstring)
+python\baseline\library_manager.py:52:4: C0116: Missing function or method docstring (missing-function-docstring)
+python\baseline\library_manager.py:61:4: C0116: Missing function or method docstring (missing-function-docstring)

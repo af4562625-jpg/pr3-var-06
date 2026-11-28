@@ -1,0 +1,13 @@
+<!doctype html><meta charset="utf-8"><style>body{margin:32px;font:18px Arial;color:#17212b;background:#fff}
+    h1{font-size:28px}h2{font-size:22px}h3{font-size:19px}
+    pre{font:15px/1.35 Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;
+    background:#f4f6f8;padding:14px;border:1px solid #cbd2d9}a{color:#0757a6}
+    table{border-collapse:collapse}td,th{border:1px solid #cbd2d9;padding:8px 16px}
+    section{margin:24px 0 36px}.note{color:#505c68}</style><h1>java_baseline_static</h1><p class="note">Captured run: 2026-11-28T08:31:05.618829+00:00 · Python 3.13.2 · exact logs and raw profiles below.</p><h3>checkstyle — messages: 19; exit: 0</h3><pre>[WARN] java\baseline\Converter.java:3:1: &#x27;CLASS_DEF&#x27; должен быть отделён от предыдущей строки. [EmptyLineSeparator]
+[WARN] java\baseline\Converter.java:5:5: &#x27;method def modifier&#x27; имеет неправильный уровень отступа 4, ожидаемый уровень 2. [Indentation]
+[WARN] java\baseline\Converter.java:6:9: &#x27;switch&#x27; имеет неправильный уровень отступа 8, ожидаемый уровень 4. [Indentation]
+[WARN] java\baseline\Converter.java:7:13: &#x27;case&#x27; дочерний элемент имеет неправильный уровень отступа 12, ожидаемый уровень 6. [Indentation]
+[WARN] java\baseline\Converter.java:8:13: &#x27;case&#x27; дочерний элемент имеет неправильный уровень отступа 12, ожидаемый уровень 6. [Indentation]
+
+[Excerpt: 5 of 19 diagnostics; full output in java_baseline_checkstyle.txt]</pre><h3>pmd — messages: 2; exit: 4</h3><pre>java\baseline\Converter.java:17:	SystemPrintln:	System.out.println is used
+java\baseline\Converter.java:20:	SystemPrintln:	System.out.println is used</pre><h3>spotbugs — messages: 1; exit: 1</h3><pre>H I Dm: Found reliance on default encoding in Converter.main(String[]): new java.util.Scanner(InputStream)  At Converter.java:[line 16]</pre>

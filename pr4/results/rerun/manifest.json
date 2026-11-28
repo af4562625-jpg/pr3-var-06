@@ -1,0 +1,115 @@
+{
+  "started_utc": "2026-11-28T08:31:05.618829+00:00",
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "group": "all",
+  "language": "all",
+  "tools": {
+    "pylint": "4.1.4",
+    "ruff": "0.17.6",
+    "bandit": "1.9.4",
+    "checkstyle": "10.21.4",
+    "pmd": "6.55.0",
+    "spotbugs": "4.9.3"
+  },
+  "source_sha256": {
+    "java/baseline/Converter.java": "99e3b8d334b45f8abc60caecb9bf428191be026cdf919dac7043fd82bdeeb94c",
+    "java/dynamic_faults/Converter.java": "7fddafba4bc2996fb36603d6ca3dc1528adcbf838cf1dfbdb4af9958cf1e18f1",
+    "java/MonitorProbe.java": "edb4dabc4fc4e857848ac2163d33044a3b07dd6ffa2ba5386317b4120aefe696",
+    "java/Probe.java": "54c4881b312d03e13b19a17428eaa2b7fa5245a2aeed59e0a7c1a4f363d354c5",
+    "java/RuntimeMonitor.java": "915852fcce06e02428430981df1ea5d87886a8c842143272cadb8e82d9846a77",
+    "java/static_faults/Converter.java": "759c26355dac2d06e3c044b7e4c183346a99a9001802d9482a77d29e39b915a1",
+    "python/baseline/app.py": "8a1887eef8b7661e44b1bc8b4768750e52ad5c223e4ccddb65c3750e32263f03",
+    "python/baseline/library_manager.py": "e84975384e1f9e06ad10640e46a6e5365529b9dbe42a521227279ffc09f02100",
+    "python/baseline/models.py": "2cb2a6bc1a266bf10e5a55c61fc0f82878c8867a385c640ad41438185795738c",
+    "python/dynamic_check.py": "596adb943c00a36a45bfc85b0461accc41f24bcf8705888a112eae3caaa6bcb9",
+    "python/dynamic_faults/app.py": "8a1887eef8b7661e44b1bc8b4768750e52ad5c223e4ccddb65c3750e32263f03",
+    "python/dynamic_faults/library_manager.py": "e13d559768de9c20be2e68430936777df6c23860a2e09a892009f51444e8901d",
+    "python/dynamic_faults/models.py": "2cb2a6bc1a266bf10e5a55c61fc0f82878c8867a385c640ad41438185795738c",
+    "python/static_faults/app.py": "8a1887eef8b7661e44b1bc8b4768750e52ad5c223e4ccddb65c3750e32263f03",
+    "python/static_faults/library_manager.py": "4ad45e2585f85ba04a4c6916d8b481968874261c9209873ae335a7e600fb82c8",
+    "python/static_faults/models.py": "2cb2a6bc1a266bf10e5a55c61fc0f82878c8867a385c640ad41438185795738c",
+    "requirements-tools.txt": "0d205cdb4cd1b8d260997a4e6d4488b3247cde1d3762097e3df9031928127b0a",
+    "run_checks.py": "ebcb6bc3a9b9220f1ef2749e24b3dda628ea9f772ff6ec47acd1148cbc3923fb"
+  },
+  "download_sha256": {
+    "checkstyle-10.21.4-all.jar": "3c1d94d6ecc83e02dff587c9ba5b6b4ec4fec38c7a958eb587efec9b28e2f318",
+    "pmd-bin-6.55.0.zip": "21acf96d43cb40d591cacccc1c20a66fc796eaddf69ea61812594447bac7a11d",
+    "spotbugs-4.9.3.zip": "3b2dcf86f97d701700121cee4bd22305d4b54fd9ed7666fa0f53933a4ab92251"
+  },
+  "status": "completed",
+  "static_counts": [
+    {
+      "language": "Python",
+      "version": "baseline",
+      "tool": "pylint",
+      "count": 5
+    },
+    {
+      "language": "Python",
+      "version": "baseline",
+      "tool": "ruff",
+      "count": 0
+    },
+    {
+      "language": "Python",
+      "version": "baseline",
+      "tool": "bandit",
+      "count": 0
+    },
+    {
+      "language": "Python",
+      "version": "static_faults",
+      "tool": "pylint",
+      "count": 11
+    },
+    {
+      "language": "Python",
+      "version": "static_faults",
+      "tool": "ruff",
+      "count": 5
+    },
+    {
+      "language": "Python",
+      "version": "static_faults",
+      "tool": "bandit",
+      "count": 2
+    },
+    {
+      "language": "Java",
+      "version": "baseline",
+      "tool": "checkstyle",
+      "count": 19
+    },
+    {
+      "language": "Java",
+      "version": "baseline",
+      "tool": "pmd",
+      "count": 2
+    },
+    {
+      "language": "Java",
+      "version": "baseline",
+      "tool": "spotbugs",
+      "count": 1
+    },
+    {
+      "language": "Java",
+      "version": "static_faults",
+      "tool": "checkstyle",
+      "count": 26
+    },
+    {
+      "language": "Java",
+      "version": "static_faults",
+      "tool": "pmd",
+      "count": 6
+    },
+    {
+      "language": "Java",
+      "version": "static_faults",
+      "tool": "spotbugs",
+      "count": 2
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+COMMAND: C:\Users\afrol\.jdks\openjdk-24.0.2+12-54\bin\java.exe -Dfile.encoding=UTF-8 -cp C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\.tools\pmd-bin-6.55.0\lib\* net.sourceforge.pmd.PMD -d java/baseline/Converter.java -R category/java/bestpractices.xml,category/java/errorprone.xml -f text --no-cache
+EXIT: 4
+
+java\baseline\Converter.java:17:	SystemPrintln:	System.out.println is used
+java\baseline\Converter.java:20:	SystemPrintln:	System.out.println is used

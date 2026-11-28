@@ -1,0 +1,5 @@
+COMMAND: C:\Users\afrol\.jdks\openjdk-24.0.2+12-54\bin\java.exe -Dfile.encoding=UTF-8 -jar C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\.tools\spotbugs-4.9.3\lib\spotbugs.jar -textui -effort:max -low -exitcode C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\build\static_faults\Converter.class
+EXIT: 1
+
+H B DE: Converter.main(String[]) might ignore java.lang.Exception  At Converter.java:[line 23]
+H I Dm: Found reliance on default encoding in Converter.main(String[]): new java.util.Scanner(InputStream)  At Converter.java:[line 18]

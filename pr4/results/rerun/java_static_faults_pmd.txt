@@ -1,0 +1,9 @@
+COMMAND: C:\Users\afrol\.jdks\openjdk-24.0.2+12-54\bin\java.exe -Dfile.encoding=UTF-8 -cp C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\.tools\pmd-bin-6.55.0\lib\* net.sourceforge.pmd.PMD -d java/static_faults/Converter.java -R category/java/bestpractices.xml,category/java/errorprone.xml -f text --no-cache
+EXIT: 4
+
+java\static_faults\Converter.java:2:	UnusedImports:	Unused import 'java.util.List'
+java\static_faults\Converter.java:19:	SystemPrintln:	System.out.println is used
+java\static_faults\Converter.java:20:	UnusedLocalVariable:	Avoid unused local variables such as 'BAD_NAME'.
+java\static_faults\Converter.java:20:	DataflowAnomalyAnalysis:	Found 'DU'-anomaly for variable 'BAD_NAME' (lines '20'-'26').
+java\static_faults\Converter.java:23:	EmptyCatchBlock:	Avoid empty catch blocks
+java\static_faults\Converter.java:24:	SystemPrintln:	System.out.println is used

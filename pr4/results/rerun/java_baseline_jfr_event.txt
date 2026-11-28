@@ -1,0 +1,14 @@
+COMMAND: C:\Users\afrol\.jdks\openjdk-24.0.2+12-54\bin\jfr.exe print --events pr4.Workload C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\results\rerun\java_baseline.jfr
+EXIT: 0
+
+pr4.Workload {
+  startTime = 11:31:47.088 (2026-11-28)
+  duration = 53,7 ms
+  iterations = 20000000
+  checksum = 1.9999998996801923E17
+  eventThread = "main" (javaThreadId = 3)
+  stackTrace = [
+    RuntimeMonitor.main(String[]) line: 50
+  ]
+}
+

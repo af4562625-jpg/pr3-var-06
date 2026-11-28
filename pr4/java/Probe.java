@@ -1,11 +1,39 @@
+import java.util.Locale;
+
+/** Checks converter behavior independently from profiling measurements. */
 public class Probe {
-  public static void main(String[] args) {
-    int[] op={2,3,4}; double[] in={1000,0,32}; double[] want={1,32,0};
-    for(int i=0;i<3;i++){
-      double actual=Converter.convert(op[i],in[i]);
-      System.out.printf("case %d: actual=%.2f expected=%.2f %s%n",op[i],actual,want[i],Math.abs(actual-want[i])<1e-9?"PASS":"FAIL");
+    public static int check() {
+        int[] operations = {2, 3, 4};
+        double[] inputs = {1000, 0, 32};
+        double[] expected = {1, 32, 0};
+        int failures = 0;
+        for (int index = 0; index < operations.length; index++) {
+            double actual = Converter.convert(operations[index], inputs[index]);
+            boolean passed = Double.isFinite(actual)
+                    && Math.abs(actual - expected[index]) < 1e-9;
+            if (!passed) failures++;
+            System.out.printf(Locale.ROOT,
+                    "case %d: input=%.2f actual=%.2f expected=%.2f %s%n",
+                    operations[index], inputs[index], actual, expected[index],
+                    passed ? "PASS" : "FAIL");
+        }
+        return failures;
     }
-    double sum=0; for(int i=0;i<20000000;i++) sum+=Converter.convert(1,i);
-    System.out.println("checksum="+sum);
-  }
+
+    public static double workload() {
+        double checksum = 0;
+        for (int index = 0; index < 20_000_000; index++) {
+            checksum += Converter.convert(1, index);
+        }
+        return checksum;
+    }
+
+    public static void main(String[] args) {
+        int failures = check();
+        System.out.println("checksum=" + workload());
+        int expectedFailures = args.length == 0 ? 0 : Integer.parseInt(args[0]);
+        if (failures != expectedFailures) {
+            throw new AssertionError("Unexpected number of failed scenarios: " + failures);
+        }
+    }
 }

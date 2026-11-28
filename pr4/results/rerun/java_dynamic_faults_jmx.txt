@@ -1,0 +1,15 @@
+COMMAND: C:\Users\afrol\.jdks\openjdk-24.0.2+12-54\bin\java.exe -cp C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\build\dynamic_faults RuntimeMonitor C:\Users\afrol\Documents\Codex\2026-11-28\cvyt\work\pr3-var-06\pr4\results\rerun\java_dynamic_faults.jfr 3
+EXIT: 0
+
+JFR state: RUNNING
+case 2: input=1000.00 actual=10.00 expected=1.00 FAIL
+case 3: input=0.00 actual=0.00 expected=32.00 FAIL
+case 4: input=32.00 actual=Infinity expected=0.00 FAIL
+JMX MemoryMXBean heap before bytes: 15844144
+JMX MemoryMXBean heap after bytes: 20038448
+JMX ThreadMXBean CPU supported: true
+JMX ThreadMXBean current thread CPU ns: 156250000
+Wall time ns: 158499100
+checksum=1.9999998996801923E17
+JFR file: java_dynamic_faults.jfr
+BEHAVIOR: 0/3 passed; expected failures=3
